@@ -1,0 +1,21 @@
+<p class="messagecWrComand">Escribe <span class="help">help</span> para tener la lista de comandos</p>
+
+<div class="container">
+  <div class="wrapper-input">
+      <p class="inputMessage">aventuras&#64;alex: $</p>
+       <input class="input" type="text" autofocus #miInput autofocus (keydown.enter)="executeComand($event)">
+  </div>
+
+  <div class="wrapper-result">
+      @if (reponseStatus == 1) {
+          <p class="error">{{renponse}}</p>
+      }
+      @else if(reponseStatus == 2){
+          <div class="wrapper-help">
+              <p class="title">ls</p>
+              <p>mostrar todos los archivos(opciones)</p>
+          </div>
+      }
+  </div>
+
+</div>

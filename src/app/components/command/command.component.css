@@ -1,0 +1,62 @@
+.messagecWrComand{
+    color: var(--txtcolor-moradoLight);
+    font-family: 'SignikaRegular';
+    font-size: 1.2rem;
+    margin: 4vh 0 0 0;
+}
+
+.help{
+    color: var(--txtcolor-white);
+    font-family: 'SignikaSemibold';
+}
+
+
+
+.container{
+    margin: 2vh 0 0 0;
+}
+
+.wrapper-input{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.input{
+    border: none;
+    background: none;
+    outline: none;
+    width: 70%;
+    cursor: pointer;
+    caret-color: var(--txtcolor-moradoLight);
+    border: 10px;
+    color: var(--txtcolor-moradoLight);
+    font-family: 'SignikaSemibold';
+    font-size: 1.2rem;
+}
+
+.inputMessage{
+    color: var(--txtcolor-celeste);
+    font-family: 'SignikaSemibold';
+    font-size: 1.1rem;
+}
+
+
+.wrapper-result{
+    margin: 1vh 0 0 0;
+    font-family: 'SignikaSemibold';
+    color: var(--txtcolor-moradoLight);
+    font-size: 1.1rem;
+}
+
+.wrapper-help{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    color: var(--textcolor-orange);
+    font-size: 1.2rem;
+}
