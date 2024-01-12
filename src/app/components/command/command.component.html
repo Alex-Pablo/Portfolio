@@ -1,21 +1,77 @@
-<p class="messagecWrComand">Escribe <span class="help">help</span> para tener la lista de comandos</p>
+<p class="messagecWrComand">
+  Escribe <span class="help">help</span> para tener la lista de comandos
+</p>
 
 <div class="container">
   <div class="wrapper-input">
-      <p class="inputMessage">aventuras&#64;alex: $</p>
-       <input class="input" type="text" autofocus #miInput autofocus (keydown.enter)="executeComand($event)">
+    <p class="inputMessage">aventuras&#64;alex: $</p>
+    <input
+      class="input"
+      type="text"
+      autofocus
+      #miInput
+      autofocus
+      (keydown.enter)="executeComand($event)"
+    />
   </div>
 
   <div class="wrapper-result">
-      @if (reponseStatus == 1) {
-          <p class="error">{{renponse}}</p>
-      }
-      @else if(reponseStatus == 2){
-          <div class="wrapper-help">
-              <p class="title">ls</p>
-              <p>mostrar todos los archivos(opciones)</p>
-          </div>
-      }
-  </div>
+    @if (reponseStatus == 1) {
+        <!-- error -->
+        <p class="error">{{ renponse }}</p>
+    } 
+    @else if(reponseStatus == 2){
+        <!-- comando help -->
+    <div class="wrapper-help">
+      <p class="title">ls</p>
+      <p>mostrar todos los archivos(opciones).</p>
+    </div>
+    <div class="wrapper-help">
+        <p class="title">cat</p>
+        <p>mostrar el contenido de un archivo (cat nombre-archivo)</p>
+    </div>
+    <div class="wrapper-help">
+      <p class="title">email</p>
+      <p>ver correo electronico.</p>
+    </div>
+    }
+    @else if (reponseStatus == 3) {
+        <!-- comando email -->
+        <p class="title">alexpabloanibal&#64;gmail.com</p>
+    }
+    @else if (reponseStatus ==4) {
+        <!-- comand ls -->
+        <p class="ls">habilidades</p>
+        <p class="ls">CV</p>
+        <p class="ls">trabajos</p>
+        <p class="ls">experiencia</p>
+    }
+    @else if (reponseStatus == 5) {
+        <!-- cat habilidades -->
+        <p class="skill"><span class="skillsBegin">/</span> Angular</p>
+        <p class="skill"><span class="skillsBegin">/</span> .Net</p>
+        <p class="skill"><span class="skillsBegin">/</span> SQL Server</p>
+        <p class="skill"><span class="skillsBegin">/</span> Oracle</p>
+        <p class="skill"><span class="skillsBegin">/</span> JavaScript</p>
+        <p class="skill"><span class="skillsBegin">/</span> Typescript</p>
+        <p class="skill"><span class="skillsBegin">/</span> Git</p>
+        <p class="skill"><span class="skillsBegin">/</span> CSS</p>
+        <p class="skill"><span class="skillsBegin">/</span> SCSS</p>
+        <p class="skill"><span class="skillsBegin">/</span> HTML</p>
+        <p class="skill"><span class="skillsBegin">/</span> Figma</p>
+    }
+    @else if(reponseStatus == 6){
+        <!-- cat trabajos -->
+        <p>Trbajando en ello</p>
+    }
+    @else if (reponseStatus==7) {
+        <!-- cat Experiencia -->
+        <p>Ganando experiencia ahora</p>
+    }
+    @else if (reponseStatus ==8) {
+        <!-- cat curriculum -->
+        <p>curriculum</p>
+    }
 
+  </div>
 </div>

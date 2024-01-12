@@ -50,13 +50,25 @@
 }
 
 .wrapper-help{
-    width: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 520px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
 }
 
 .title{
     color: var(--textcolor-orange);
     font-size: 1.2rem;
+}
+
+.ls{
+    color: var(--txtcolor-morado);
+}
+
+.skillsBegin{
+    color: var(--txtcolor-moradoDark);
+    font-size: 1.2rem;
+}
+
+.skill{
+    color: var(--txtcolor-morado);
 }
